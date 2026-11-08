@@ -1,2 +1,60 @@
-Witaj!
-Działa 🎉
+odp do spr 
+zad 1 
+#include <iostream>
+using namespace std;
+int main() {
+    int n, il=0;
+    cin >> n;
+    for (int i = 1; i <= n; i++)
+        if (n % i == 0) il++;
+    cout << il;
+    return 0;
+}
+Program liczy liczbę dzielników całkowitych liczby n w zakresie od 1 do n.  
+Dla n = 7 dzielnikami są 1 i 7 (łącznie 2 dzielniki).
+Dla n = 8 dzielnikami są 1, 2, 4, 8 (łącznie 4 dzielniki).
+zad 2
+#include <iostream>
+using namespace std;
+int main() {
+    int n, suma = 0;
+    cin >> n;
+    for (int i = 1; i <= n; i++) {
+        if (i % 3 == 0) suma += i;
+    }
+    cout << suma;
+    return 0;
+}
+zad 3
+#include <iostream>
+using namespace std;
+int main() {
+    int x;
+    cin >> x;
+    if (x > 0) {
+        if (x % 2 == 0)
+            cout << "dodatnia parzysta";
+        else
+            cout << "dodatnia nieparzysta";
+    } else {
+        cout << "niedodatnia";
+    }
+    return 0;
+}
+zad 4
+#include <iostream>
+using namespace std;
+int main() {
+    int n, ile = 0;
+    cin >> n;
+    for (int i = 1; i <= n; i++) {
+        if (i % 5 == 0) {
+            ile++;
+        }
+    }
+    cout << ile;
+    return 0;
+}
+Wynik testu dla n = 23: 4 (wielokrotności to: 5, 10, 15, 20).
+
+
